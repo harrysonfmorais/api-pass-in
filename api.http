@@ -1,0 +1,34 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": "Novo Evento 2",
+  "details": "Um novo evento 2",
+  "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/b369d391-1ee9-4c27-a2cb-576d2bda459f/attendees
+Content-Type: application/json
+
+{
+  "name": "Harryson Morais",
+  "email": "harrysonmorais@email.com"
+}
+
+###
+
+GET http://localhost:3333/events/b0e4c65c-da38-428f-8bcb-fae143e16231
+
+###
+
+GET http://localhost:3333/attendees/2/badge
+
+###
+
+GET http://localhost:3333/attendees/1/check-in
+
+###
+
+GET http://localhost:3333/events/b0e4c65c-da38-428f-8bcb-fae143e16231/attendees
